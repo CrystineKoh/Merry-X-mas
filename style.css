@@ -12,6 +12,15 @@ body {
   overflow: hidden;
 }
 
+#clock {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 100px;
+  animation: clock 1s infinite linear;
+}
+
 .header {
   width: 100%;
   height: 24px;
@@ -60,4 +69,33 @@ body {
   width: 24px;
   height: 24px;
   vertical-align: middle;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  background: url("../img/gift.png") no-repeat 0 0;
+  background-size: cover;
+  animation: goDown 2s linear;
+}
+
+@keyframes goDown {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+/* gift style */
+.giftpack {
+  position: absolute;
+  display: block;
+  width: 54px;
+  height: 77px;
+  background: url("../img/gift.png") no-repeat 0 0;
+  background-size: cover;
 }
