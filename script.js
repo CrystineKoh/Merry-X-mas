@@ -30,6 +30,7 @@ function startSecondCountdown() {
       document.getElementsByClassName("header")[0].style.display = "block";
       const box = document.querySelector(".box");
       box.remove();
+      showPop();
     }
   }, 1000);
 }
@@ -39,7 +40,8 @@ function createNew() {
   let box = document.createElement("div");
   box.classList.add("box");
   const bodyTag = document.querySelector("body");
-  box.style.left = Math.floor(Math.random() * window.innerWidth - 100) + "px";
+  box.style.left =
+    Math.floor(Math.random() * (window.innerWidth - 100)) + 50 + "px";
   // box.style.top = Math.floor(Math.random() * window.innerHeight - 50) + "px";
   bodyTag.append(box);
   box.addEventListener("click", gone);
@@ -55,11 +57,18 @@ function gone(event) {
   let points = 0;
   if (Math.random() > 0.5) {
     points = 10;
+    event.target.style.background = 'url("../img/coin.png") no-repeat';
+    event.target.style.backgroundSize = "contain";
+  } else {
+    points = 0;
+    event.target.style.background = 'url("../img/none.png") no-repeat';
+    event.target.style.backgroundSize = "contain";
   }
   if (timer < 0) {
     return;
   }
-  event.target.remove();
+
+  // event.target.remove();
   totalScore += points;
   console.log(totalScore);
   giftCount.innerText = totalScore;
@@ -67,4 +76,14 @@ function gone(event) {
     createNew();
   } else {
   }
+}
+
+// Pop-up result
+function showPop() {
+  let pop = document.createElement("div");
+  pop.classList.add("pop");
+  const bodyTag = document.querySelector("body");
+  bodyTag.append(pop);
+  pop.innerHTML = "<span>" + totalScore + " points" + "</span>";
+  giftCount.innerText = totalScore;
 }

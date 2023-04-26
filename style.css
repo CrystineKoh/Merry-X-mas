@@ -76,12 +76,18 @@ body {
   height: 80px;
   display: block;
   position: absolute;
-  background: url("../img/gift.png") no-repeat 0 0;
+  background: url("../img/gift.png") no-repeat;
   background-size: cover;
   animation: goDown 2s linear;
 }
 
 @keyframes goDown {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
   from {
     top: 0px;
   }
@@ -90,12 +96,20 @@ body {
   }
 }
 
-/* gift style */
-.giftpack {
+.pop {
+  width: 240px;
+  height: 371px;
+  background: url("../img/popBg.png") no-repeat;
+  background-size: contain;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -185px;
+  font-size: 2rem;
+  text-align: center;
+  color: wheat;
   display: block;
-  width: 54px;
-  height: 77px;
-  background: url("../img/gift.png") no-repeat 0 0;
-  background-size: cover;
+  overflow: hidden;
+  line-height: 350px;
 }
