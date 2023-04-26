@@ -57,11 +57,11 @@ function gone(event) {
   let points = 0;
   if (Math.random() > 0.5) {
     points = 10;
-    event.target.style.background = 'url("../img/coin.png") no-repeat';
+    event.target.style.background = 'url("./img/coin.png") no-repeat';
     event.target.style.backgroundSize = "contain";
   } else {
     points = 0;
-    event.target.style.background = 'url("../img/none.png") no-repeat';
+    event.target.style.background = 'url("./img/none.png") no-repeat';
     event.target.style.backgroundSize = "contain";
   }
   if (timer < 0) {
