@@ -44,7 +44,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("../img/topIcon.png") no-repeat;
+  background: url("./img/topIcon.png") no-repeat;
   background-size: cover;
   vertical-align: middle;
 }
@@ -59,7 +59,7 @@ body {
   display: inline-block;
   width: 26px;
   height: 26px;
-  background: url("../img/gift.png") no-repeat;
+  background: url("./img/gift.png") no-repeat;
   background-size: cover;
   vertical-align: middle;
 }
@@ -76,7 +76,7 @@ body {
   height: 80px;
   display: block;
   position: absolute;
-  background: url("../img/gift.png") no-repeat;
+  background: url("./img/gift.png") no-repeat;
   background-size: cover;
   animation: goDown 2s linear;
 }
@@ -99,7 +99,7 @@ body {
 .pop {
   width: 240px;
   height: 371px;
-  background: url("../img/popBg.png") no-repeat;
+  background: url("./img/popBg.png") no-repeat;
   background-size: contain;
   position: absolute;
   top: 50%;
