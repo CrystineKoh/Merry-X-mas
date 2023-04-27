@@ -37,3 +37,5 @@ https://crystinekoh.github.io/Merry-X-mas/
 - DOM Selection
 - DOM Manipulation
 - Callback function
+- HTML
+- CSS
