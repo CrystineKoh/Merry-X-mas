@@ -79,6 +79,7 @@ body {
   background: url("./img/gift.png") no-repeat;
   background-size: cover;
   animation: goDown 2s linear;
+  box-shadow: none;
 }
 
 @keyframes goDown {

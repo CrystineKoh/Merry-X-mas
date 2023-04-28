@@ -45,7 +45,6 @@ function createNew() {
   // box.style.top = Math.floor(Math.random() * window.innerHeight - 50) + "px";
   bodyTag.append(box);
   box.addEventListener("click", gone);
-  box.style.boxShadow = "none";
   setTimeout(() => {
     box.remove();
   }, 1000);
@@ -65,6 +64,7 @@ function gone(event) {
     points = 0;
     event.target.style.background = 'url("./img/none.png") no-repeat';
     event.target.style.backgroundSize = "contain";
+    event.target.style.boxShadow = "none";
   }
   if (timer < 0) {
     return;
