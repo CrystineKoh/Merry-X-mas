@@ -45,6 +45,7 @@ function createNew() {
   // box.style.top = Math.floor(Math.random() * window.innerHeight - 50) + "px";
   bodyTag.append(box);
   box.addEventListener("click", gone);
+  box.style.boxShadow = "none";
   setTimeout(() => {
     box.remove();
   }, 1000);
