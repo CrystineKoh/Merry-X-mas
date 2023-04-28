@@ -78,7 +78,6 @@ body {
   position: absolute;
   background: url("./img/gift.png") no-repeat;
   background-size: cover;
-  background-color: transparent;
   animation: goDown 2s linear;
 }
 
