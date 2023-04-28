@@ -89,12 +89,6 @@ body {
   100% {
     transform: rotate(360deg);
   }
-  from {
-    top: 0px;
-  }
-  to {
-    top: 100vh;
-  }
 }
 
 .pop {
