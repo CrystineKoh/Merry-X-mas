@@ -59,6 +59,7 @@ function gone(event) {
     points = 10;
     event.target.style.background = 'url("./img/coin.png") no-repeat';
     event.target.style.backgroundSize = "contain";
+    event.target.style.boxShadow = "none";
   } else {
     points = 0;
     event.target.style.background = 'url("./img/none.png") no-repeat';
