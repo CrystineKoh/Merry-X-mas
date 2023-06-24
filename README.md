@@ -1,17 +1,21 @@
 # Merry-X-mas
+Welcome to Merry-X-mas Game! This is a fun and interactive web game where you catch gifts to score points within a given time limit. The game features a countdown, random gift appearances, and a scoring system.
 
-## Summary
+## Game Instructions
 
-Merry X-mas is a simple game that I got inspired from a mini game from Alipay.
-I made this game as a project to play with the class, to interact with the whole classmate.
+The game begins with a countdown from 3.
 
-## How to play the game
+Once the countdown reaches 0, the game starts and you have 15 seconds to catch as many gifts as possible.
+
+Click on the gifts as they fall to catch them.
 
 Gifts box with coin = 10 points.
 
 Gifts box with bomb = 0 point.
 
-Within 15 sec, click as many gifts box possible, to get the higher point and win the ultimate gift.
+Your total score is displayed at the top right corner of the screen.
+
+Once the time is up, a pop-up will show your final score.
 
 ## Installation
 
@@ -24,10 +28,11 @@ OR
 click this link
 https://crystinekoh.github.io/Merry-X-mas/
 
-## Tools used in this game:
+## Technologies Used
 
 - DOM Selection
 - DOM Manipulation
 - Callback function
 - HTML
 - CSS
+- JavaScript
